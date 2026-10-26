@@ -1,0 +1,17 @@
+<!-- Paste into a GoHighLevel "Custom JS/HTML" (Code) element. Set the section/row to full width with 0 padding. -->
+<style>
+  #bba-carly-frame { display:block; width:100%; height:100vh; border:0; margin:0; padding:0; overflow:hidden; }
+</style>
+<iframe id="bba-carly-frame" src="https://jasestuart.github.io/LINK-IN-BIO-CARLY/men.html" scrolling="no" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Better Body Academy"></iframe>
+<script>
+  (function () {
+    var f = document.getElementById('bba-carly-frame');
+    // Pass ad/UTM params from the funnel URL through to the embedded page
+    if (location.search) f.src += location.search;
+    // Auto-resize to the page's real height
+    window.addEventListener('message', function (e) {
+      if (e.data && e.data.bbaFrameHeight) f.style.height = e.data.bbaFrameHeight + 'px';
+    });
+    f.addEventListener('load', function () { f.contentWindow.postMessage('bbaRequestHeight', '*'); });
+  })();
+</script>
