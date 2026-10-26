@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's See If You Qualify — Better Body Academy</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#05070d" />
+  <link rel="icon" type="image/png" href="BADGE LOGO (Filled).png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    body {
+      background:
+        radial-gradient(circle at 15% 10%, rgba(59,130,246,0.20), transparent 55%),
+        radial-gradient(circle at 85% 90%, rgba(30,58,138,0.25), transparent 55%),
+        radial-gradient(circle at 50% 50%, rgba(96,165,250,0.05), transparent 70%),
+        linear-gradient(180deg, #05070d 0%, #0a1020 100%);
+      background-color: #05070d;
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px 40px;
+    }
+    @media (max-width: 640px) {
+      body { padding: 20px 16px 32px; }
+      #bba-survey { height: 1160px; }
+    }
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: clamp(28px, 5.2vw, 46px);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      margin: 0 0 16px;
+      max-width: 760px;
+    }
+    .hero-sub {
+      color: #ffffff;
+      text-align: center;
+      font-size: clamp(17px, 2vw, 21px);
+      line-height: 1.5;
+      max-width: 660px;
+      margin: 0 0 6px;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      height: 1060px;
+      border: 0;
+      overflow-y: auto;
+      transition: height 0.2s ease;
+    }
+  </style>
+  <!-- PostHog analytics -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_vQZ9PQ74CS2s2pJnev3S6hHz5kWjj7he93iPGSc8w2VJ', {
+      api_host: 'https://us.i.posthog.com',
+      person_profiles: 'identified_only',
+      capture_pageview: true,
+      capture_pageleave: true
+    });
+  </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ywis4inp9z");
+  </script>
+</head>
+
+<body>
+  <h1>Let's See If You <span style="color:#38B6FF;font-weight:800">Qualify</span> To Work With Us</h1>
+  <p class="hero-sub">
+    <strong style="color:#ffffff;display:block;margin-bottom:8px;">This application will take 60 seconds.</strong>
+    <span style="color:rgba(255,255,255,0.55);">If you qualify, you'll be invited to book a free call where we'll map out your plan to lose 10-20kg and get your energy back.</span>
+  </p>
+  <p style="color:#ffffff;font-weight:700;font-size:22px;margin:0 0 12px;">Start Now 👇</p>
+  <iframe id="bba-survey" src="https://api.leadconnectorhq.com/widget/survey/XgvZ0aGeazDlYTpp8CQB"
+    title="Better Body Academy application" referrerpolicy="unsafe-url"
+    allow="camera; microphone; autoplay; encrypted-media; fullscreen; payment"></iframe>
+
+  <script>
+    // Forward ad/UTM params from this page's own URL onto the survey, so GHL
+    // can capture them via hidden fields (requires those hidden fields to be
+    // configured on the survey - see repo notes).
+    (function () {
+      var q = location.search.slice(1);
+      if (!q) return;
+      var frame = document.getElementById('bba-survey');
+      frame.src = 'https://api.leadconnectorhq.com/widget/survey/XgvZ0aGeazDlYTpp8CQB?' + q;
+    })();
+  </script>
+
+  <script>
+    // Grow the survey iframe to fit each slide so it never scrolls inside.
+    // The GHL survey posts its content height to the parent page (the same
+    // messages form_embed.js listens for); read it and size the iframe to it.
+    (function () {
+      var frame = document.getElementById('bba-survey');
+      function readHeight(d) {
+        if (Array.isArray(d)) {
+          var tagged = d.some(function (x) { return typeof x === 'string' && /height/i.test(x); });
+          if (!tagged) return 0;
+          for (var i = 0; i < d.length; i++) {
+            var n = parseInt(d[i], 10);
+            if (n > 0 && String(d[i]).replace(/px$/, '') == n) return n;
+          }
+          return 0;
+        }
+        if (d && typeof d === 'object') return parseInt(d.height || d.frameHeight, 10) || 0;
+        return 0;
+      }
+      window.addEventListener('message', function (e) {
+        if (!/leadconnectorhq\.com|msgsndr\.com|gohighlevel\.com/.test(e.origin)) return;
+        var h = readHeight(e.data);
+        if (h > 150 && h < 4000) frame.style.height = (h + 8) + 'px';
+      });
+    })();
+
+    // Report this page's height to a parent frame so the GHL embed can auto-resize.
+    //
+    // NOTE: document.documentElement.scrollHeight is floored at the current
+    // viewport height (i.e. the outer iframe's CURRENT box size) even when the
+    // real content is much shorter - so once the outer frame starts tall, it
+    // can never be told to shrink via scrollHeight. Measure the real bottom
+    // edge of the content instead, via getBoundingClientRect, which reflects
+    // actual layout regardless of how tall the iframe box currently is.
+    (function () {
+      if (window.parent === window) return;
+      var last = 0;
+      function postHeight() {
+        var children = document.body.children;
+        var maxBottom = 0;
+        for (var i = 0; i < children.length; i++) {
+          if (children[i].tagName === 'SCRIPT') continue;
+          var bottom = children[i].getBoundingClientRect().bottom;
+          if (bottom > maxBottom) maxBottom = bottom;
+        }
+        var paddingBottom = parseFloat(getComputedStyle(document.body).paddingBottom) || 0;
+        var h = Math.ceil(maxBottom + paddingBottom);
+        if (h && h !== last) { last = h; window.parent.postMessage({ bbaFrameHeight: h }, '*'); }
+      }
+      window.addEventListener('load', postHeight);
+      window.addEventListener('resize', postHeight);
+      if (window.ResizeObserver) { try { new ResizeObserver(postHeight).observe(document.body); } catch (e) {} }
+      [200, 600, 1200, 2500, 4000].forEach(function (t) { setTimeout(postHeight, t); });
+      window.addEventListener('message', function (e) { if (e.data === 'bbaRequestHeight') postHeight(); });
+    })();
+  </script>
+  <script src="tracking.js?v=1"></script>
+</body>
+
+</html>
